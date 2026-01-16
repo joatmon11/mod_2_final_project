@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mod 2 Final Project</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/6487f0a3d4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c9615f273.js" crossorigin="anonymous"></script>
 </head>
-<body class="perkspotbx">
+<body>
     <section id="landing">
         <nav>
-            <div class="row nav__row ">
-                <div class="nav__logo"></div>
+            <div class="nav__container ">
+                <div class="nav__logo">
                     <img src="Assets/t_img.svg" class="nav__logo--img" alt="logo">
                     <div class="nav__logo--title">
                         Treact
                     </div>
                 </div>
-                <div class="nav__links">
-                    <ul class="nav__links">
-                        <li><a href="#" class="nav__link">About</a></li>
-                        <li><a href="#" class="nav__link">Blog</a></li>
-                        <li><a href="#" class="nav__link">Pricing</a></li>
-                        <li><a href="#" class="nav__link">Contact Us</a></li>
-                        <li><a href="#" class="nav__link--login">Login</a></li>
-                        <li><a href="#sign-up" class="nav__link nav__link--primary">Sign up</a></li>
-                    </ul>
-                </div>
+                <ul class="nav__links">
+                    <li><a href="#" class="nav__link">About</a></li>
+                    <li><a href="#" class="nav__link">Blog</a></li>
+                    <li><a href="#pricing" class="nav__link">Pricing</a></li>
+                    <li><a href="#" class="nav__link">Contact Us</a></li>
+                    <li><a href="#" class="nav__link nav__link--login">Login</a></li>
+                    <li><a href="#sign-up" class="nav__link nav__link--primary">Sign up</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -39,7 +37,7 @@
                             Our templates are easy to setup, understand and customize.  Fully modular components with a variety of pages and components.
                         </p>
                         <div class="header__email">
-                            <input type="text" class="header__email--input">
+                            <input type="text" class="header__email--input" placeholder="Your E-mail Address">
                             <button class="header__email--btn">Start here</button>
                         </div>
                         <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
@@ -55,7 +53,7 @@
         <main>
             <section id="features">
                <div class="container">
-                <div class="row">
+                <div class="row__narrow">
                     <h4 class="section__tag">FEATURES</h3>
                     <h2 class="section__title">We Have Amazing <span class="purple">Service</span></h1>
                     <p class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias accusamus consequatur molestiae repudiandae excepturi nihil voluptatibus quas velit ullam. Reiciendis beatae iure esse labore quasi eum veniam atque eaque omnis?</p>
@@ -92,7 +90,7 @@
                                     <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div>                      
                         <div class="feature">
                             <div class="feature__row">
                                 <figure class="feature__img--wrapper">
@@ -131,33 +129,104 @@
                 </div>
                </div>
             </section>
+
+
             <section id="quality">
                <div class="container">
                 <div class="row">
-                    <h4 class="section__tag">QUALITY WORK</h3>
-                    <h2 class="section__title">Designed & Developed by <span class="purple">Professionals</span></h1>
-                    <p class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias accusamus consequatur molestiae repudiandae excepturi nihil voluptatibus quas velit ullam. Reiciendis beatae iure esse labore quasi eum veniam atque eaque omnis?</p>
+                    <div class="quality__block">
+                        <h4 class="section__tag">QUALITY WORK</h3>
+                        <h2 class="section__title">Designed & Developed by <span class="purple">Professionals</span></h1>
+                        <p class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias accusamus consequatur molestiae repudiandae excepturi nihil voluptatibus quas velit ullam. Reiciendis beatae iure esse labore quasi eum veniam atque eaque omnis?</p>
+                        <button class="btn">Learn more</button>
+                    </div>
+                    <figure class="quality__img--wrapper">
+                        <img src="Assets/hero-screenshot.png" alt="">
+                        <svg viewbox="0 0 1280 1280" class="quality__grid" ></svg>
+                    </figure>
                 </div>
                </div>
             </section>
+
+
             <section id="steps">
                <div class="container">
                 <div class="row">
-                    <h4 class="section__tag">STEPS</h3>
-                    <h2 class="section__title">We Have Amazing <span class="purple">Service</span></h1>
-                    <p class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias accusamus consequatur molestiae repudiandae excepturi nihil voluptatibus quas velit ullam. Reiciendis beatae iure esse labore quasi eum veniam atque eaque omnis?</p>
+                    <figure class="steps_img--wrapper">
+                        <img src="Assets/hero-screenshot-2.png" alt="">
+                    </figure>
+                    <div class="steps__block">
+                        <h4 class="section__tag">STEPS</h3>
+                        <h2 class="section__title">Easy to <span class="purple">get started</span></h1>
+                        <div class="steps__list">
+                            <div class="step">
+                                <div class="step__number">01</div>
+                                <div class="step__description">
+                                <div class="step__title">Register</div>
+                                <p class="step__para">Create an account with us using Google or Facebook.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step__number">02</div>
+                            <div class="step__description">
+                                <div class="step__title">Download</div>
+                                <p class="step__para">Browse and Download the template that you like from the marketplace.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step__number">03</div>
+                            <div class="step__description">
+                                <div class="step__title">Run</div>
+                                <p class="step__para">Follow the instructions to setup and customize the template to your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
                </div>
             </section>
+
+
             <section id="values">
                <div class="container">
                 <div class="row">
-                    <h4 class="section__tag">VALUES</h3>
-                    <h2 class="section__title">Designed & Developed by <span class="purple">Professionals</span></h1>
-                    <p class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias accusamus consequatur molestiae repudiandae excepturi nihil voluptatibus quas velit ullam. Reiciendis beatae iure esse labore quasi eum veniam atque eaque omnis?</p>
+                    <div class="values__block">
+                        <h4 class="section__tag">VALUES</h3>
+                        <h2 class="section__title">Designed & Developed by <span class="purple">Professionals</span></h1>
+                        <p class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias accusamus consequatur molestiae repudiandae excepturi nihil voluptatibus quas velit ullam. Reiciendis beatae iure esse labore quasi eum veniam atque eaque omnis?</p>
+                        <div class="values__list">
+                            <div class="value">
+                                <div class="value__title">
+                                    <figure class="value__img--wrapper">
+                                        <img src="Assets/dollar-sign-green.svg" class="value__img" alt="">
+                                    </figure>
+                                    <div class="value__name">Affordable</div>
+                                    <p class="value__para">
+                                        We promise to offer you the best rate we can - at par with the industry standard.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <div class="value__title">
+                                    <figure class="value__img--wrapper">
+                                        <img src="Assets/briefcase-red.svg" class="value__img" alt="">
+                                    </figure>
+                                    <div class="value__name">Professionalism</div>
+                                    <p class="value__para">
+                                        We promise to offer you the best rate we can - at par with the industry standard.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="values__img">
+                        <img src="Assets/prototype-illustration.svg" alt="">
+                    </figure>
                 </div>
                </div>
             </section>
+
+
             <section id="pricing">
                <div class="container">
                 <div class="row">
@@ -167,6 +236,8 @@
                 </div>
                </div>
             </section>
+
+
             <section id="testimonials">
                <div class="container">
                 <div class="row">
