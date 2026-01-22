@@ -39,6 +39,10 @@ li {
     list-style-type: none;
 }
 
+
+
+
+
 /* 
 
 NAVIGATION
@@ -149,6 +153,95 @@ img {
     text-decoration: none;
     background-color: rgba(80, 17, 204);
 }
+
+/* MENU & BUTTON  */
+
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    display: none;
+    transition: all 300ms ease;
+}
+
+.menu--open .menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 378px;
+    margin: 24px 16px;
+    padding: 32px;
+    background-color: #fff;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(300%);
+    transition: all 300ms ease;
+}
+
+.btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button {
+    appearance: ;
+}
+
+.btn__menu--svg:hover {
+    filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+svg[Attributes Style] {
+    width: 24;
+    height: 24;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+transitions style {
+    border-left-color: rgb(34, 58, 93);
+    border-left-width: 0px;
+    border-right-color: rgb(34, 58, 93);
+    border-right-width: 0px;
+    color: rgb(35, 60, 96);
+    border-top-color: rgb(34, 58, 93);
+    border-top-width: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0.0304957px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-left: 0.182974px;
+    padding-right: 0.182974px;
+    padding-top: 0.0304957px;
+    background-color: rgba(240, 240, 240, 0.03);
+    border-bottom-color: rgb(34, 58, 93);
+    border-bottom-width: 0px;
+}
+
 
 /*
 
@@ -1094,6 +1187,18 @@ footer {
 SMALL SCREENS
 
 */
+
+@media (max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .btn__menu {
+        display: block;
+    }
+}
 
 @media (max-width: 640px) {
     .container {
