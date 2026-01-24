@@ -16,10 +16,10 @@ html {
     scroll-behavior: smooth;
 }
 
-#landing {
+/* #landing {
     padding: 0 32px;
 
-}
+} */
 
 div {
     display: block;
@@ -347,14 +347,6 @@ p {
     max-width: 768px;
 }
 
-figure {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-    unicode-bidi: isolate;
-}
 
 .header__img--wrapper {
     width: calc(100% - 40%);
@@ -1217,6 +1209,9 @@ MEDIA QUERIES
 /* MEDIA @ 1024PX */
 
 @media (max-width: 1024px) {
+    body  {
+        width: 100%;
+    }
     .section__title {
         font-size: 36px;
         text-align: center;
@@ -1352,6 +1347,14 @@ MEDIA QUERIES
     #steps .row, #testimonials .row {
         flex-direction: column;
     }
+    .step__description {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+    .step {
+        flex-direction: column;
+        align-items: center;
+    }
     .footer__columns {
         justify-content: flex-start;
     }
@@ -1372,6 +1375,11 @@ MEDIA QUERIES
     }
     #features .section__title, #pricing .section__title {
         font-size: 36px;
+    }
+    .feature__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     .testimonial__bottom {
         flex-direction: column;
